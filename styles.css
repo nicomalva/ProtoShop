@@ -1,0 +1,334 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+
+    background-color: #fff;
+
+    border-bottom: 1px solid gray;
+    
+    padding-top: 2rem;
+    
+    padding-left: 3rem;
+    
+    padding-right: 3rem;
+    
+    padding-bottom: 2rem;
+    
+    height: 8rem;    
+    
+    display: flex ;
+    
+    color: #231942;
+
+    /* position:sticky; */
+
+}
+
+.logo{
+    
+    font-size: 3rem;
+    
+    font-family: Arial, Helvetica, sans-serif;
+    
+    font-weight: 600;
+    
+    color: #225d70;
+    
+    text-align: center;
+    
+    margin-left: 1rem;
+    
+    margin-right: 1rem;
+
+}
+
+.headerCont{
+
+    
+    display: flex;
+    
+    justify-content: space-evenly;
+    
+    position: absolute;
+    
+    right: 3rem;
+    
+    color: #225d70;
+    
+    width: 100%;
+    
+    margin: auto;
+    
+}
+
+.cart{
+
+    font-size: xx-large;
+    
+    color: #225d70;
+    
+    position: absolute;
+    
+    right: 3rem;
+
+}
+/* 
+img-fluid {
+
+    max-height: 100px;
+
+} */
+
+body{
+    height: auto;
+}
+
+.menu{
+
+    display: inline-block;
+    
+    font-size: xx-large;
+    
+    color: #225d70;
+
+}
+
+
+.portada{
+    
+    display: flex;
+    
+    position: relative;
+    
+    height: 15rem;
+    
+    background-image: url(./multimedia/index/placa-fondo-negro.jpg);
+    
+    background-repeat: no-repeat;
+    
+    background-position: center;
+    
+    padding-top: 1rem;
+    
+    padding-bottom: 1rem;
+    
+}
+
+.portada::before{
+    
+    content:"";
+    
+    position: absolute;
+    
+    background-color: #225d70;
+    
+    top: 0;
+    
+    bottom: 0;
+    
+    left: 0;
+    
+    right: 0;
+    
+    opacity: 0.6;
+
+}
+
+.portadaText{
+       
+    position: absolute;
+    
+    margin-top: 1rem;
+    
+    margin-bottom: 1rem;
+    
+    margin-left: 3rem;
+    
+    max-width: 90%;
+    
+    height: 35rem;
+    
+    color: #fff;
+
+    font-size: 3.5rem;
+    
+    font-weight: 600;
+    
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+
+.searchDiv{
+
+    margin-left: 2rem;
+    
+    margin-right: 2rem;
+    
+    padding-top: 2rem;
+    
+    padding-bottom: 2rem;
+    
+    display: flex;
+    
+    justify-content: center;
+    
+    background-color: #fff;    
+
+}
+
+.searchInput{
+
+    margin-right: 1rem;
+    
+    width: 30rem;
+    
+    min-width: 15rem;
+    
+    height: 3.8rem;
+    
+    border-radius: 1.9rem 0.5rem 0.5rem 1.9rem;
+    
+    border-color: black;
+    
+    text-align: center;
+    
+    font-size: xx-large;
+
+}
+
+.searchButton{
+
+    height: 4rem;
+    
+    width: 10rem;
+    
+    min-width: 5rem;
+    
+    border-radius: 0.5rem 2rem 2rem 0.5rem;
+    
+    border-color: black;
+    
+    background-color: #225d70;
+
+}
+
+.searchButton i{
+    
+    font-size: xx-large;
+    
+    font-weight: 900;
+
+}
+
+.deck{
+
+    display: flex;
+    
+    flex-wrap: wrap;
+    
+    justify-content:space-evenly;
+    
+    background-color: #fff;
+    
+    max-height: 40rem;
+    
+    width: 95%;
+    
+    margin: 0 auto;
+    
+}
+
+.card-img-top{
+
+    height: 300px;
+
+}
+
+.cartContainer{
+
+    overflow-y: scroll;
+
+}
+
+footer{
+    background-color: #103f4d;
+    padding: 1rem;
+    text-align: center;
+    margin-top: 80rem;
+}
+
+footer h2{
+
+    font-size: 3.5rem;
+    
+    font-weight: 600;
+    
+    font-family:Arial, Helvetica, sans-serif;
+
+    margin-bottom: 2rem;
+    
+    color: #fff;
+
+}
+
+footer ul{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+
+}
+
+footer ul li{
+    list-style: none;
+    font-size: xx-large;
+    
+}
+
+footer ul li a{
+    color: black;
+}
+
+@media screen  and (max-width: 677px){
+    
+    .portada{
+        height: 20rem;
+    }
+
+}
+
+@media screen  and (max-width: 669px){
+    
+    .portada{
+        height: 25rem;
+    }
+
+}
+
+@media screen  and (max-width: 500px){
+    
+    .logo{
+        font-size: 2rem;
+        padding-top: 0.9rem;
+    }
+
+}
+
+@media screen  and (max-width: 410px){
+    
+    .logo{
+        font-size: 1.5rem;
+        padding-top: 1rem;
+    }
+
+}
+
+@media screen  and (max-width: 384px){
+    
+    .portada{
+        height: 30rem;
+    }
+
+}
