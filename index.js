@@ -100,28 +100,17 @@ const renderCart = () => {
         cartCard.innerHTML = `
         
             <div class="card mb-3" style="max-width: 540px;">
-
                 <div class="row g-0">
-
                     <div class="col-md-4">
-
                         <img src=${productInCart.data().img} class="img-fluid rounded-start" alt=${productInCart.data().name}>
-                    
                     </div>
-
-                    <div class="col-md-7">
-                        
-                        <div class="card-body">
-                            
+                    <div class="col-md-7">                   
+                        <div class="card-body">   
                             <h5 class="card-title">${productInCart.data().name}</h5>
-                            
                             <p class="card-text">$${productInCart.data().price}</p>
-                            <input type="number" min="1" class="productQuantity"></input>
                             
                         </div>
-                    
                     </div>
-
                 </div>
             
             </div>
@@ -181,6 +170,7 @@ const renderCards = async (productsResponse) => {
         card.className = 'card';
         
         card.innerHTML = `
+        
             <div class="card" style="width: 18rem;">
                 <img src=${product.data().img} class="card-img-top" alt=${product.data().name}>
                 <div class="card-body">

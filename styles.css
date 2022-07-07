@@ -163,9 +163,9 @@ body{
 
 .searchDiv{
 
-    margin-left: 2rem;
+    padding-left: 2rem;
     
-    margin-right: 2rem;
+    padding-right: 2rem;
     
     padding-top: 2rem;
     
@@ -185,7 +185,7 @@ body{
     
     width: 30rem;
     
-    min-width: 15rem;
+    min-width: 10rem;
     
     height: 3.8rem;
     
@@ -233,18 +233,10 @@ body{
     
     background-color: #fff;
     
-    max-height: 40rem;
-    
     width: 95%;
     
-    margin: 0 auto;
+    margin: 1rem auto 1rem;
     
-}
-
-.card-img-top{
-
-    height: 300px;
-
 }
 
 .cartContainer{
@@ -254,10 +246,13 @@ body{
 }
 
 footer{
+
     background-color: #103f4d;
+
     padding: 1rem;
+
     text-align: center;
-    margin-top: 80rem;
+
 }
 
 footer h2{
@@ -275,20 +270,27 @@ footer h2{
 }
 
 footer ul{
+
     display: flex;
+
     justify-content: space-evenly;
+
     text-align: center;
 
 }
 
 footer ul li{
+
     list-style: none;
+
     font-size: xx-large;
     
 }
 
 footer ul li a{
+
     color: black;
+
 }
 
 @media screen  and (max-width: 677px){
@@ -310,8 +312,11 @@ footer ul li a{
 @media screen  and (max-width: 500px){
     
     .logo{
+
         font-size: 2rem;
+
         padding-top: 0.9rem;
+
     }
 
 }
@@ -319,8 +324,11 @@ footer ul li a{
 @media screen  and (max-width: 410px){
     
     .logo{
+
         font-size: 1.5rem;
+
         padding-top: 1rem;
+
     }
 
 }
@@ -328,7 +336,27 @@ footer ul li a{
 @media screen  and (max-width: 384px){
     
     .portada{
+
         height: 30rem;
+
+    }
+
+}
+
+@media screen  and (max-width: 373px){
+    
+    .portada{
+
+        height: 35rem;
+
+    }
+    
+    .logo{
+
+        font-size: 1.3rem;
+
+        padding-top: 1rem;
+        
     }
 
 }
