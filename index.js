@@ -46,6 +46,8 @@ const emptyCart = () => {
 
         renderCart();
 
+        cartBadge();
+
         const totalBox = document.querySelector(`.totalContainer`);
 
         totalBox.textContent = total;
@@ -85,6 +87,18 @@ const checkout = () => {
 
 }
 
+const cartBadge = () => {
+
+    const badge = document.querySelector(`.cartBadge`);
+
+    let cartLength = cart.length;
+
+    badge.textContent = cartLength;
+
+    console.log(cartLength);
+
+}
+
 const renderCart = () => {
 
     const cartContainer = document.querySelector('.cartContainer');
@@ -114,7 +128,7 @@ const renderCart = () => {
         `;
 
         cartContainer.append(cartCard);
-
+        cartBadge();
     });
     
 }
@@ -185,8 +199,10 @@ const renderCards = async (productsResponse) => {
 
 
 }
-
+cartBadge();
 renderCards(getProducts());
+
+
 
 const emptyBtn = document.querySelector(`.emptyBtn`);
 
@@ -195,3 +211,5 @@ const finishBtn = document.querySelector(`.finishBtn`);
 emptyBtn.addEventListener(`click`, emptyCart);
 
 finishBtn.addEventListener(`click`, checkout);
+
+

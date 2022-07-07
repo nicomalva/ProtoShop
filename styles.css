@@ -75,12 +75,12 @@ header{
     right: 3rem;
 
 }
-/* 
-img-fluid {
 
-    max-height: 100px;
+.cartBadge{
 
-} */
+    font-size: small;
+
+}
 
 body{
     height: auto;
