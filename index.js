@@ -95,8 +95,6 @@ const cartBadge = () => {
 
     badge.textContent = cartLength;
 
-    console.log(cartLength);
-
 }
 
 const renderCart = () => {
