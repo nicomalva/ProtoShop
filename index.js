@@ -95,6 +95,15 @@ const cartBadge = () => {
 
     badge.textContent = cartLength;
 
+    if(cartLength===0){
+
+        badge.style.visibility = "hidden";
+
+    }else{
+
+        badge.style.visibility = "visible";
+        
+    }
 }
 
 const renderCart = () => {
