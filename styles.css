@@ -239,6 +239,12 @@ body{
     
 }
 
+.card-img-top{
+
+    height: 220px;
+
+}
+
 .cartContainer{
 
     overflow-y: scroll;
